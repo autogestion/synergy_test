@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, url
-
+from .views import UserListView
 
 urlpatterns = patterns('',
-    url(r'^$', "users.views.index", name='users'),
+    url(r'^$', UserListView.as_view(), name='users'),
 )
