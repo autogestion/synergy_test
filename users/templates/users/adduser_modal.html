@@ -1,0 +1,7 @@
+{% extends "base_modal.html" %}
+{% block content %}
+            {% csrf_token %}
+            <input type='hidden' id='userId' value='' name='user_id'>
+            {{form.as_p}}
+            <a href="url">Address</a>
+{% endblock %}

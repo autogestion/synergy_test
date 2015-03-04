@@ -15,11 +15,10 @@
 
     <!-- Custom styles for this template -->
     <link href="{% static 'main.css' %}" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   </head>
 
   <body>
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -29,7 +28,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -40,64 +38,15 @@
     </nav>
 
     <div class="container">
-
       <div class="starter-template">
 		{% block content %}
-        <h1>Synergy Way Users</h1>
-        <form class="form-inline" >
-           <div class="form-group">
-               <input class="form-control" id="searchName" placeholder="John Doe">
-           </div>
-           <button type="submit" class="btn btn-default">Search</button>
-           <div class="form-group">
-                <button type="button" data-toggle="modal" data-target="#addModal" class="btn btn-default">Add</button>
-           </div>
-        </form>
-        <table class="table table-striped table-bordered table-condensed">
-			<tr>
-				<td>Vasia Pup</td>
-				<td>qwery@gmail.com</td>
-				<td><a href="#">Edit</a>/<a href="#">View</a></td>
-			</tr>
-			<tr>
-				<td>Vasia Pup</td>
-				<td>qwery@gmail.com</td>
-				<td><a href="#">Edit</a>/<a href="#">View</a></td>
-			</tr>
-			<tr>
-				<td>Vasia Pup</td>
-				<td>qwery@gmail.com</td>
-				<td><a href="#">Edit</a>/<a href="#">View</a></td>
-			</tr>
-		</table>
 		{% endblock %}
       </div>
-
     </div><!-- /.container -->
-
-    <div class="modal fade" id="addModal">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title">Modal title</h4>
-	      </div>
-	      <div class="modal-body">
-	        <p>One fine body&hellip;</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
-	      </div>
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="{% static 'bootstrap-3.3.2-dist/js/bootstrap.js' %}"></script>
     
   </body>

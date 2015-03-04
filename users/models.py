@@ -5,4 +5,3 @@ from django.contrib.auth.models import User
 
 class SynergyUser(User):
     phone = models.CharField(max_length=40)
-    
