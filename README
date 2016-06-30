@@ -1,1 +1,9 @@
-Synergy test task.
+Synergy test task. Flask version
+
+Create tables and procedures
+
+    python db_level.py
+
+Start server
+
+    python web_level.py 
